@@ -11,12 +11,14 @@ import { CustomeruserComponent } from './components/customeruser/customeruser.co
 import { CustomeruserModule } from './components/customeruser/customeruser.module';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { FormsModule } from '@angular/forms';
+import { EditCustomerUserComponent } from './components/customeruser/edit-customer-user/edit-customer-user.component';
 
 @NgModule({
   declarations: [
     AdministratorComponent,
     UsersComponent,
-    CustomeruserComponent
+    CustomeruserComponent,
+    EditCustomerUserComponent
   ],
   imports: [
     CommonModule,

@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { UsersComponent } from './users.component';
+import { EditCustomerUserComponent } from './components/customeruser/edit-customer-user/edit-customer-user.component';
 
 const childRoutes: Routes = [
   {
@@ -28,10 +29,10 @@ const childRoutes: Routes = [
           loadChildren: './components/customeruser/customeruser.module#CustomeruserModule',
           children: 
           [
-            //  { 
-            //    path: 'edit-customer-user', 
-            //    component: EditCustomerUserComponent 
-            //  },
+             { 
+               path: 'edit-customer-user/:id', 
+               component: EditCustomerUserComponent 
+             },
           ] 
         },
         // { 

@@ -11,7 +11,11 @@ export class AppUserService {
   constructor(private http: HttpClient, private commonService: CommonService) {
   }
   getAll() {
-    this.urlAccess = this.commonService.GetCoreServiceUrl() + 'Common/Users';
+    this.urlAccess = this.commonService.GetCoreServiceUrl() + 'Common/GetAPIUsers';
+    return this.http.get<IAppUser[]>(this.urlAccess);
+  }
+  getAllById(id : any) {
+    this.urlAccess = this.commonService.GetCoreServiceUrl() + 'Common/GetAPIUsersById?id='+id+'';
     return this.http.get<IAppUser[]>(this.urlAccess);
   }
 }

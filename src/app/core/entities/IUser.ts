@@ -6,4 +6,8 @@ export interface IAppUser{
     userClientSecret: string;
     isActive: boolean;
     AccessTokenExTime: string;
+
+    apiVersion :string;
+    apiController :string;
+    apiMethods:string;
 }
