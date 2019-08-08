@@ -53,7 +53,7 @@
 }
 
 .profile-foot {
-    padding:5px 10px 0 10px;
+    padding: 5px 10px 0 10px;
     text-align: center;
     h4 {
         text-transform: uppercase;
@@ -105,4 +105,12 @@
             text-decoration: none;
         }
     }
+}
+
+.user-active {
+    color: green;
+}
+
+.user-disable {
+    color: red;
 }

@@ -5,10 +5,9 @@
                 <img src="{{avatarImgSrc}}" alt="avatar">
             </div>
             <span class="user-name">{{user.userId}}</span>
-            <span class="user-post">{{userPost}}</span>
+            <span class="user-post">{{user.userEmail}}</span>
             <span class="map-location">
-        <i class="fa fa-map-marker"></i>
-        <span>Shen Zhen</span>
+        <span [ngClass]="user.isActive?'user-active':'user-disable'">{{user.isActive?"Active":"Deactivated"}}</span>
             </span>
         </div>
         <div class="profile-head">
