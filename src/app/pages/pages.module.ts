@@ -9,6 +9,7 @@ import { LayoutModule } from '../shared/layout.module';
 
 import { PagesComponent } from './pages.component';
 import { LoginComponent } from './login/login.component';
+import { UsersModule } from './users/users.module';
 
 
 @NgModule({
